@@ -17,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-// TODO: remove
-Route::get('/test-email', function(){
-    $user = User::where('email', 'admin@bat-signal-api.com')->first();
-    Notification::send($user , new APICallFailedNotification('ERROR: failed to send panic'));
-});
+// // TODO: remove
+// Route::get('/test-email', function(){
+//     $user = User::where('email', 'admin@bat-signal-api.com')->first();
+//     Notification::send($user , new APICallFailedNotification('ERROR: failed to send panic'));
+// });
